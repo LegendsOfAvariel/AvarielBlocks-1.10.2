@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "avarielblocks:blocks/logs/log_four_end",
+        "side": "avarielblocks:blocks/logs/log_four_side"
+    }
+}
