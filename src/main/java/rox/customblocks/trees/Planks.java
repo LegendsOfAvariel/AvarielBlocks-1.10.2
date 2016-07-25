@@ -17,7 +17,7 @@ public class Planks extends Block {
 	
 	//Constructor
 	public Planks(String name) {
-		//All planks should be wood
+		//All planks should be wood and sound like wood
 		super(Material.WOOD);
 		
 		//Registry name set at initialization

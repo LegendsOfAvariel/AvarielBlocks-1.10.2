@@ -34,7 +34,7 @@ public class Leaves extends Block {
 	@Override
 	public boolean isOpaqueCube(IBlockState state)
     {
-        return false;
+        return false; //Force fancy due to buggy textures on fast. I don't know anymore; it's buggy either way.
     }
 	
 	@Override
