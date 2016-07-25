@@ -1,4 +1,5 @@
 itemGroup.AvarielTrees=Avariel Custom Trees
+itemGroup.AvarielFoliage=Avariel Custom Foliage
 
 tile.avarielblocks:planks_one.name=Planks One
 tile.avarielblocks:planks_two.name=Planks Two
@@ -33,3 +34,20 @@ tile.avarielblocks:log_thirteen.name=Log Thirteen
 tile.avarielblocks:log_fourteen.name=Log Fourteen
 tile.avarielblocks:log_fifteen.name=Log Fifteen
 tile.avarielblocks:log_sixteen.name=Log Sixteen
+
+tile.avarielblocks:leaves_one.name=Leaves One
+tile.avarielblocks:leaves_two.name=Leaves Two
+tile.avarielblocks:leaves_three.name=Leaves Three
+tile.avarielblocks:leaves_four.name=Leaves Four
+tile.avarielblocks:leaves_five.name=Leaves Five
+tile.avarielblocks:leaves_six.name=Leaves Six
+tile.avarielblocks:leaves_seven.name=Leaves Seven
+tile.avarielblocks:leaves_eight.name=Leaves Eight
+tile.avarielblocks:leaves_nine.name=Leaves Nine
+tile.avarielblocks:leaves_ten.name=Leaves Ten
+tile.avarielblocks:leaves_eleven.name=Leaves Eleven
+tile.avarielblocks:leaves_twelve.name=Leaves Twelve
+tile.avarielblocks:leaves_thirteen.name=Leaves Thirteen
+tile.avarielblocks:leaves_fourteen.name=Leaves Fourteen
+tile.avarielblocks:leaves_fifteen.name=Leaves Fifteen
+tile.avarielblocks:leaves_sixteen.name=Leaves Sixteen

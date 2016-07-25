@@ -12,7 +12,7 @@ public class ServerProxy {
 	public void preInit(FMLPreInitializationEvent e) {
 		Planks.serverInit(); //Initialize planks serverside
 		Logs.serverInit();
-		//Leaves.serverInit();
+		Leaves.serverInit();
 	}
 	
 	public void init(FMLInitializationEvent e) {

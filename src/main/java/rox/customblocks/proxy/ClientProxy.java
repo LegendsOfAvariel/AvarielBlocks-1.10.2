@@ -13,7 +13,7 @@ public class ClientProxy extends ServerProxy {
 		super.preInit(e); //Calls preinit from ServerProxy
 		Planks.clientInit(); //Initialize planks clientside
 		Logs.clientInit();
-		//Leaves.clientInit();
+		Leaves.clientInit();
 	}
 	
 	public void init(FMLInitializationEvent e) {
