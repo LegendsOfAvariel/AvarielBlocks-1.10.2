@@ -26,7 +26,7 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import rox.customblocks.AvarielTabs;
 
-public class Leaves extends Block implements IBlockColor {
+public class Leaves extends Block {
 	
 	public Leaves(String name) {
 		super(Material.LEAVES);
@@ -49,10 +49,10 @@ public class Leaves extends Block implements IBlockColor {
         return null;
     }
 	
-	@Override
-	public int colorMultiplier(IBlockState state, IBlockAccess worldIn, BlockPos pos, int tintIndex) {
-		return 0;
-	}
+//	@Override
+//	public int colorMultiplier(IBlockState state, IBlockAccess worldIn, BlockPos pos, int tintIndex) {
+//		return 0;
+//	}
 	
 	@Override
 	@SideOnly(Side.CLIENT)
@@ -60,12 +60,12 @@ public class Leaves extends Block implements IBlockColor {
         return BlockRenderLayer.CUTOUT_MIPPED;
     }
 	
-	@Override
-	@SideOnly(Side.CLIENT)
-    public boolean shouldSideBeRendered(IBlockState blockState, IBlockAccess blockAccess, BlockPos pos, EnumFacing side) {
-		//Culls the face even if the adjacent block is transparent.
-        return blockAccess.getBlockState(pos.offset(side)).getBlock() == this ? false : super.shouldSideBeRendered(blockState, blockAccess, pos, side);
-    }
+//	@Override
+//	@SideOnly(Side.CLIENT)
+//    public boolean shouldSideBeRendered(IBlockState blockState, IBlockAccess blockAccess, BlockPos pos, EnumFacing side) {
+//		//Culls the face even if the adjacent block is transparent.
+//       return blockAccess.getBlockState(pos.offset(side)).getBlock() == this ? false : super.shouldSideBeRendered(blockState, blockAccess, pos, side);
+//   }
 	
 	public static Block leavesOne = new Leaves("leaves_one");
 	public static Block leavesTwo = new Leaves("leaves_two");
