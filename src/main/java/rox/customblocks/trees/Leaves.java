@@ -49,21 +49,16 @@ public class Leaves extends Block {
         return null;
     }
 	
-//	@Override
-//	public int colorMultiplier(IBlockState state, IBlockAccess worldIn, BlockPos pos, int tintIndex) {
-//		return 0;
-//	}
-	
 	@Override
 	@SideOnly(Side.CLIENT)
 	public BlockRenderLayer getBlockLayer() {
         return BlockRenderLayer.CUTOUT_MIPPED;
     }
 	
+	//Culls the face even if the adjacent block is transparent. Uncomment this if leaves cause too much FPS lag.
 //	@Override
 //	@SideOnly(Side.CLIENT)
 //    public boolean shouldSideBeRendered(IBlockState blockState, IBlockAccess blockAccess, BlockPos pos, EnumFacing side) {
-//		//Culls the face even if the adjacent block is transparent.
 //       return blockAccess.getBlockState(pos.offset(side)).getBlock() == this ? false : super.shouldSideBeRendered(blockState, blockAccess, pos, side);
 //   }
 	
