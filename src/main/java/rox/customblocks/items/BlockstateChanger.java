@@ -17,13 +17,14 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import rox.customblocks.AvarielTabs;
 import rox.customblocks.trees.Logs;
 
 public class BlockstateChanger extends Item {
 	public BlockstateChanger() {
 		this.setRegistryName("blockstate_changer");
 		this.setUnlocalizedName(this.getRegistryName().toString());
-		this.setCreativeTab(CreativeTabs.TOOLS);
+		this.setCreativeTab(AvarielTabs.tabAvarielTools);
 	}
 	
 	@Override
@@ -89,6 +90,34 @@ public class BlockstateChanger extends Item {
         	case 9: metaNew = 13; break;
         	case 12: metaNew = 0; break;
         	case 13: metaNew = 1; break;
+        	}
+        	
+        	bsNew = block.getStateFromMeta(metaNew);
+        	world.setBlockState(pos, bsNew);
+        	
+        	return EnumActionResult.SUCCESS;
+        }
+        
+        else if (block == Blocks.RED_MUSHROOM_BLOCK || block == Blocks.BROWN_MUSHROOM_BLOCK) {
+        	metaCur = block.getMetaFromState(blockState);
+        	
+        	switch(metaCur) {
+        	case 0: metaNew = 5; break; //Full inside > U cap
+        	case 1: metaNew = 10; break; //NW cap > Y stem
+        	case 2: metaNew = 3; break; //N cap > NE cap
+        	case 3: metaNew = 6; break; //NE cap > E cap
+        	case 4: metaNew = 1; break; //W cap > NW cap
+        	case 5: metaNew = 2; break; //U cap > N cap
+        	case 6: metaNew = 9; break; //E cap > SE cap
+        	case 7: metaNew = 4; break; //SW cap > W cap
+        	case 8: metaNew = 7; break; //S cap > SW cap
+        	case 9: metaNew = 8; break; //SE cap > S cap
+        	case 10: metaNew = 14; break; //Y stem > Full Cap
+        	case 11: metaNew = 0; break; //Default redundant meta
+        	case 12: metaNew = 0; break; //Default redundant meta
+        	case 13: metaNew = 0; break; //Default redundant meta
+        	case 14: metaNew = 15; break; //Full cap > Full stem
+        	case 15: metaNew = 0; break; //Full stem > Full inside
         	}
         	
         	bsNew = block.getStateFromMeta(metaNew);

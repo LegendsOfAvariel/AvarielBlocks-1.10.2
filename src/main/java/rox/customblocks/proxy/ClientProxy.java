@@ -4,6 +4,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import rox.customblocks.items.BlockstateChanger;
+import rox.customblocks.items.ShroomPlacer;
 import rox.customblocks.trees.Leaves;
 import rox.customblocks.trees.Logs;
 import rox.customblocks.trees.Planks;
@@ -16,6 +17,7 @@ public class ClientProxy extends ServerProxy {
 		Logs.clientInit();
 		Leaves.clientInit();
 		BlockstateChanger.clientInit();
+		ShroomPlacer.clientInit();
 	}
 	
 	public void init(FMLInitializationEvent e) {
