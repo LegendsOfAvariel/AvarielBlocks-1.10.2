@@ -52,6 +52,8 @@ tile.avarielblocks:leaves_fourteen.name=Cherry Blossoms
 tile.avarielblocks:leaves_fifteen.name=Plum Leaves
 tile.avarielblocks:leaves_sixteen.name=Willow Leaves
 
+tile.avarielblocks:smoke_block.name=Smoke Emitter
+
 itemGroup.AvarielTools=Avariel Tools
 itemGroup.AvarielTrees=Avariel Custom Trees
 itemGroup.AvarielFoliage=Avariel Custom Foliage

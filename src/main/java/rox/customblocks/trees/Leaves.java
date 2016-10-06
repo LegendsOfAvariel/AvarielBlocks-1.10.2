@@ -44,6 +44,11 @@ public class Leaves extends Block {
         return false;
     }
 	
+	public boolean isFullCube(IBlockState state)
+    {
+        return false;
+    }
+	
 	@Override
 	public Item getItemDropped(IBlockState state, Random rand, int fortune) {
         return null;
